@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Power BI Portfolio — Kaustubh Narayankar
 
 Personal portfolio site built to support applications for Power BI Developer,
@@ -62,3 +63,6 @@ python -m http.server 8000
 1. Push this folder to a GitHub repo.
 2. Repo Settings → Pages → Deploy from branch → `main` / root.
 3. Site goes live at `https://<username>.github.io/<repo>/`.
+=======
+# Portfolio_BI
+>>>>>>> 3e667827f42c59eb0d503476176bcf7fe7cfaa66
