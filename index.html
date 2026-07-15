@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaustubh Narayankar | Power BI &amp; Business Intelligence Developer</title>
+<meta name="description" content="Kaustubh Narayankar  Power BI Developer &amp; Data Analyst. Building dashboards that turn raw data into business decisions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chatbot.css">
+<link rel="stylesheet" href="ds-redirect.css">
+<link rel="stylesheet" href="welcome-modal.css">
+<script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  /*
+ * Copyright (c) 2026 Kaustubh Narayankar
+ * All Rights Reserved.
+ * Unauthorized copying, modification, or distribution of this file is prohibited.
+ */
+
+<div class="grain"></div>
+
+<header id="site-header">
+  <a class="logo" href="#home">KN<span>.</span></a>
+
+  <nav id="site-nav">
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#github">GitHub</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <a class="btn btn-sm header-cta" href="mailto:k.narayankar3030@gmail.com">Hire Me</a>
+
+  <button id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-bg-grid"></div>
+
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="eyebrow"><i class="fa-solid fa-circle-dot"></i> <span class="hero-tag" data-type="POWER BI DEVELOPER · DATA ANALYST"></span></span>
+
+      <h1>Turning Data Into<br><span class="highlight">Business Decisions.</span></h1>
+
+      <p class="hero-desc">
+        I'm a recent M.Sc. Data Science graduate who builds Power BI dashboards the way a consultant would —
+        starting with the business question, not the chart type. Three end-to-end simulations with
+        Deloitte and PwC, and a freelance HR analytics build, sit behind that approach.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#projects">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+        <a class="btn btn-secondary" href="C:\Users\KAUSTUBH\Documents\MIni Projects\BI_Portfolio\V3\resume\Kaustubh_Resume_BI_12-07-2026.pdf" download>Download Resume <i class="fa-solid fa-download"></i></a>
+        <a class="btn btn-ghost" href="#contact">Hire Me</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item"><i class="fa-solid fa-location-dot"></i> Mumbai, India</div>
+        <div class="hero-meta-item"><i class="fa-solid fa-graduation-cap"></i> M.Sc. Data Science</div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="dash-mock" id="dashMock">
+        <div class="dash-mock-header">
+          <div class="dash-dots"><span></span><span></span><span></span></div>
+          <span class="dash-title">executive_overview.pbix</span>
+        </div>
+
+        <div class="dash-grid">
+          <div class="kpi-tile" data-target="1240000" data-prefix="₹" data-suffix="">
+            <span class="kpi-label">Revenue Tracked</span>
+            <span class="kpi-value">₹0</span>
+            <span class="kpi-trend up"><i class="fa-solid fa-arrow-trend-up"></i> live</span>
+          </div>
+          <div class="kpi-tile" data-target="94" data-prefix="" data-suffix="%">
+            <span class="kpi-label">Customer Retention</span>
+            <span class="kpi-value">30%</span>
+            <span class="kpi-trend up"><i class="fa-solid fa-arrow-trend-up"></i> live</span>
+          </div>
+          <div class="kpi-tile" data-target="480" data-prefix="" data-suffix="">
+            <span class="kpi-label">Downtime Events</span>
+            <span class="kpi-value">10-30</span>
+            <span class="kpi-trend down"><i class="fa-solid fa-arrow-trend-down"></i> live</span>
+          </div>
+          <div class="kpi-tile" data-target="118" data-prefix="" data-suffix="%">
+            <span class="kpi-label">Performance Index</span>
+            <span class="kpi-value">0%</span>
+            <span class="kpi-trend up"><i class="fa-solid fa-arrow-trend-up"></i> live</span>
+          </div>
+        </div>
+
+        <div class="dash-chart">
+          <div class="bar-chart" id="heroBarChart"></div>
+          <div class="dash-chart-caption">Downtime by factory · last 6 periods</div>
+        </div>
+      </div>
+
+      <div class="floating-badge badge-1"><i class="fa-solid fa-bolt"></i> DAX optimized</div>
+      <div class="floating-badge badge-2"><i class="fa-solid fa-database"></i> SQL-backed model</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-title">
+    <span class="section-kicker">01 · About</span>
+    <h2>Building Dashboards That Solve<br>Business Problems</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="about-container">
+    <div class="about-text">
+      <p>
+        I got into Power BI the way most analysts do  by getting frustrated with static spreadsheets that
+        couldn't answer the next question someone asked in a meeting. Since then, every dashboard I build
+        starts the same way: what decision is this meant to support, and for whom?
+      </p>
+      <p>
+        My M.Sc. in Data Science gave me the statistical and modelling foundation. Job simulations with
+        Deloitte and PwC gave me the consulting workflow  client brief, data model, DAX measures, executive
+        summary. A freelance HR analytics project taught me how that workflow holds up outside a training
+        environment, with messier data and real stakeholders.
+      </p>
+      <p>
+        I'm now looking for a full-time role as a Power BI Developer, BI Developer, Data Analyst, or Data
+        Scientist  somewhere I can keep building the bridge between raw data and the decision it should
+        inform.
+      </p>
+
+      <div class="about-tags">
+        <span>Power BI</span><span>DAX</span><span>Power Query</span><span>SQL</span>
+        <span>Tableau</span><span>Python</span><span>Data Storytelling</span>
+      </div>
+    </div>
+
+    <div class="about-stats">
+      <div class="stat-card"><h2 data-target="500">0</h2><p>K+ Records Modeled</p></div>
+      <div class="stat-card"><h2 data-target="3">0</h2><p>End-to-End Dashboards</p></div>
+      <div class="stat-card"><h2 data-target="20">0</h2><p>Business Insights Delivered</p></div>
+      <div class="stat-card"><h2 data-target="2">0</h2><p>Industry Job Simulations</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY / TIMELINE ============ -->
+<section class="journey" id="journey">
+  <div class="section-title">
+    <span class="section-kicker">02 · Journey</span>
+    <h2>Experience &amp; Education</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-marker"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Education</span>
+        <h3>M.Sc. Data Science</h3>
+        <p>Graduate coursework in statistics, machine learning, Python, SQL, data visualization, data mining, predictive analytics, data preprocessing, feature engineering, exploratory data analysis (EDA), probability, hypothesis testing, and database management. 
+          Developed the analytical and technical skills to transform complex datasets into actionable insights through interactive dashboards and data driven solutions..</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"><i class="fa-solid fa-industry"></i></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Job Simulation</span>
+        <h3>Deloitte Data Analytics Job Simulation</h3>
+        <p>Built a manufacturing analytics dashboard to identify production downtime across factories.
+          Flagged Daikibo Factory Seiko (480 unhealthy devices) and Daikibo Shenzhen (420) as the highest-risk
+          sites, with the Laser Welder and Laser Cutter as the top failing machines  informing a preventive
+          maintenance and machine-prioritization plan.</p>
+        <div class="timeline-tags"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Excel</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"><i class="fa-solid fa-briefcase"></i></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Job Simulation</span>
+        <h3>PwC Switzerland Power BI Job Simulation</h3>
+        <p>Delivered three executive dashboards — Call Centre Trends, Customer Retention, and
+          Diversity &amp; Inclusion  turning operational and workforce data into KPI reporting a leadership
+          team could act on directly.</p>
+        <div class="timeline-tags"><span>Power BI</span><span>Power Query</span><span>DAX</span><span>Excel</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"><i class="fa-solid fa-people-group"></i></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Freelance</span>
+        <h3>HR Analytics Dashboard</h3>
+        <p>Analyzed salary and workforce equality patterns across gender, age, occupation, marital status,
+          and family size, surfacing 20+ business insights into compensation trends and workplace diversity.</p>
+        <div class="timeline-tags"><span>Power BI</span><span>Excel</span><span>DAX</span></div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker current"><i class="fa-solid fa-flag"></i></div>
+      <div class="timeline-content">
+        <span class="timeline-date">Now</span>
+        <h3>Open to Full-Time Roles</h3>
+        <p>Actively looking for Power BI Developer, Business Intelligence Developer, Data Analyst, or Data
+          Scientist positions where I can own dashboards end to end.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="skills" id="skills">
+  <div class="section-title">
+    <span class="section-kicker">03 · Skills</span>
+    <h2>Toolkit</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="skills-columns">
+
+    <div class="skills-column">
+      <h3><i class="fa-solid fa-chart-column"></i> Business Intelligence</h3>
+      <div class="meter"><div class="meter-row"><span>Power BI</span><span class="meter-pct">92%</span></div><div class="meter-track"><div class="meter-fill" data-pct="92"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>DAX</span><span class="meter-pct">85%</span></div><div class="meter-track"><div class="meter-fill" data-pct="85"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Power Query</span><span class="meter-pct">88%</span></div><div class="meter-track"><div class="meter-fill" data-pct="88"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Tableau</span><span class="meter-pct">75%</span></div><div class="meter-track"><div class="meter-fill" data-pct="75"></div></div></div>
+    </div>
+
+    <div class="skills-column">
+      <h3><i class="fa-solid fa-database"></i> Data &amp; Programming</h3>
+      <div class="meter"><div class="meter-row"><span>SQL</span><span class="meter-pct">88%</span></div><div class="meter-track"><div class="meter-fill" data-pct="88"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Python</span><span class="meter-pct">80%</span></div><div class="meter-track"><div class="meter-fill" data-pct="80"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Pandas / NumPy</span><span class="meter-pct">78%</span></div><div class="meter-track"><div class="meter-fill" data-pct="78"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Excel</span><span class="meter-pct">90%</span></div><div class="meter-track"><div class="meter-fill" data-pct="90"></div></div></div>
+    </div>
+
+    <div class="skills-column">
+      <h3><i class="fa-solid fa-diagram-project"></i> Analytics &amp; Tooling</h3>
+      <div class="meter"><div class="meter-row"><span>Statistics &amp; EDA</span><span class="meter-pct">82%</span></div><div class="meter-track"><div class="meter-fill" data-pct="82"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Machine Learning</span><span class="meter-pct">70%</span></div><div class="meter-track"><div class="meter-fill" data-pct="70"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Git / GitHub</span><span class="meter-pct">80%</span></div><div class="meter-track"><div class="meter-fill" data-pct="80"></div></div></div>
+      <div class="meter"><div class="meter-row"><span>Data Storytelling</span><span class="meter-pct">86%</span></div><div class="meter-track"><div class="meter-fill" data-pct="86"></div></div></div>
+    </div>
+
+  </div>
+  <!-- Note: percentages above are self-assessed placeholders — adjust to reflect your own confidence level. -->
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="section-title">
+    <span class="section-kicker">04 · Case Studies</span>
+    <h2>Projects</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="project-grid">
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-client">Deloitte</span>
+        <span class="project-index">01</span>
+      </div>
+      <div class="project-content">
+        <h3>Manufacturing Analytics Dashboard</h3>
+
+        <div class="project-block">
+          <span class="project-block-label">Business Problem</span>
+          <p>Identify production downtime across multiple factories.</p>
+        </div>
+        <div class="project-block">
+          <span class="project-block-label">Key Findings</span>
+          <ul>
+            <li>Daikibo Factory Seiko — 480 unhealthy devices, highest downtime</li>
+            <li>Daikibo Shenzhen — 420 unhealthy devices, second highest</li>
+            <li>Laser Welder and Laser Cutter — top two failing machines</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <span class="project-block-label">Business Value</span>
+          <p>Preventive maintenance, production optimization, machine prioritization, executive dashboard.</p>
+        </div>
+
+        <div class="project-tools">
+          <span>Power BI</span><span>DAX</span><span>Power Query</span><span>Excel</span>
+        </div>
+
+        <a class="project-link" href="projects/deloitte.html">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-client">PwC Switzerland</span>
+        <span class="project-index">02</span>
+      </div>
+      <div class="project-content">
+        <h3>Power BI Job Simulation</h3>
+
+        <div class="project-block">
+          <span class="project-block-label">Dashboards Built</span>
+          <ul>
+            <li>Call Centre Trends</li>
+            <li>Customer Retention</li>
+            <li>Diversity &amp; Inclusion</li>
+          </ul>
+        </div>
+        <div class="project-block">
+          <span class="project-block-label">Business Value</span>
+          <p>Executive KPI reporting, customer insights, and workforce analysis in one interactive dashboard.</p>
+        </div>
+
+        <div class="project-tools">
+          <span>Power BI</span><span>Power Query</span><span>DAX</span><span>Excel</span>
+        </div>
+
+        <a class="project-link" href="projects/pwc.html">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-top">
+        <span class="project-client">Freelance</span>
+        <span class="project-index">03</span>
+      </div>
+      <div class="project-content">
+        <h3>HR Analytics Dashboard</h3>
+
+        <div class="project-block">
+          <span class="project-block-label">Business Problem</span>
+          <p>Analyze salary patterns and workplace equality.</p>
+        </div>
+        <div class="project-block">
+          <span class="project-block-label">Analysis Included</span>
+          <p>Gender, age, occupation, marital status, family size, and salary — 20+ business insights.</p>
+        </div>
+        <div class="project-block">
+          <span class="project-block-label">Business Value</span>
+          <p>Helps businesses understand compensation trends and workforce diversity.</p>
+        </div>
+
+        <div class="project-tools">
+          <span>Power BI</span><span>Excel</span><span>DAX</span>
+        </div>
+
+        <a class="project-link" href="projects/hr-analytics.html">View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="certifications" id="certifications">
+  <div class="section-title">
+    <span class="section-kicker">05 · Certifications</span>
+    <h2>Certifications &amp; Simulations</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="cert-grid">
+    <div class="cert-card"><i class="fa-solid fa-building-columns"></i><h3>PwC Switzerland</h3><p>Power BI Job Simulation</p></div>
+    <div class="cert-card"><i class="fa-solid fa-building"></i><h3>Deloitte</h3><p>Data Analytics Job Simulation</p></div>
+    <div class="cert-card"><i class="fa-brands fa-google"></i><h3>Google</h3><p>Data Analytics</p></div>
+    <div class="cert-card"><i class="fa-solid fa-server"></i><h3>IBM</h3><p>Data Analyst</p></div>
+    <div class="cert-card"><i class="fa-solid fa-award"></i><h3>TCS</h3><p>iON Career Edge</p></div>
+  </div>
+  <!-- Note: swap in exact certificate titles/links as you have them. -->
+</section>
+
+<!-- ============ GITHUB ============ -->
+<section class="github" id="github">
+  <div class="section-title">
+    <span class="section-kicker">06 · Open Source</span>
+    <h2>GitHub Activity</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="github-panel">
+    <div class="github-panel-text">
+      <p>
+        This portfolio's source, along with my Power BI project files and data-cleaning scripts, lives
+        on GitHub. The stats below update automatically as I commit.
+      </p>
+      <a class="btn btn-secondary" href="https://github.com/KaustubhSN12" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i> View Full Profile
+      </a>
+    </div>
+
+    <div class="github-stats">
+      <img
+         src="https://github-readme-stats.vercel.app/api?username=KaustubhSN12&show_icons=true&theme=transparent&hide_border=true&title_color=F2C811&icon_color=F2C811&text_color=cdd6e3&bg_color=00000000"
+        alt="GitHub stats for KaustubhSN12"
+        loading="lazy">
+      <img
+        src="https://streak-stats.demolab.com/?user=KaustubhSN12&theme=transparent&hide_border=true&ring=F2C811&fire=F2C811&currStreakLabel=F2C811&background=00000000"
+        alt="GitHub streak stats for KaustubhSN12"
+        loading="lazy">
+    </div>
+  </div>
+  <!-- Note: replace "your-github" in the three URLs above with your actual GitHub username. -->
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-title">
+    <span class="section-kicker">07 · Contact</span>
+    <h2>Let's Build Something<br>Data-Driven</h2>
+    <div class="underline"></div>
+  </div>
+
+  <p class="contact-sub">Open to Power BI Developer, BI Developer, Data Analyst, and Data Scientist roles  reach out directly, through the links below, or with the form.</p>
+
+  <div class="contact-buttons">
+    <a class="btn btn-primary" href="mailto:k.narayankar3030@gmail.com"><i class="fa-solid fa-envelope"></i> Email Me</a>
+    <a class="btn btn-secondary" href="https://www.linkedin.com/in/kaustubh-narayankar-6651a9249/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    <a class="btn btn-secondary" href="https://github.com/KaustubhSN12" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+    <a class="btn btn-ghost" href="C:\Users\KAUSTUBH\Documents\MIni Projects\BI_Portfolio\V3\resume\Kaustubh_Resume_BI_12-07-2026.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+  </div>
+  <!-- Note: update LinkedIn/GitHub URLs to your real profiles. -->
+
+  <form class="contact-form" id="contactForm" action="https://formspree.io/f/xbdnjgdp" method="POST">
+    <div class="form-row">
+      <div class="form-field">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="_replyto" required>
+      </div>
+    </div>
+    <div class="form-field">
+      <label for="cf-message">Message</label>
+      <textarea id="cf-message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+    <p class="form-status" id="formStatus" role="status"></p>
+  </form>
+  <!-- Note: sign up at formspree.io, create a form, and replace YOUR_FORM_ID above with your real form ID. -->
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a class="logo" href="#home">KN<span>.</span></a>
+    <ul class="footer-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="footer-socials">
+      <a href="mailto:k.narayankar3030@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/kaustubh-narayankar-6651a9249/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/KaustubhSN12" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+  <p class="footer-copy">© 2026 Kaustubh Narayankar. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<button id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+<script src="chatbot-data.js"></script>
+<script src="chatbot.js"></script>
+<script src="ds-redirect.js"></script>
+<script src="welcome-modal.js"></script>
+</body>
+</html>
