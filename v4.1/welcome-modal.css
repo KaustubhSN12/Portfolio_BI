@@ -1,0 +1,106 @@
+/* ===========================================================
+   WELCOME MODAL — shown once per visitor on first homepage visit
+   Relies on CSS variables from style.css (loaded first).
+=========================================================== */
+
+#welcomeOverlay{
+    position:fixed;
+    inset:0;
+    background:rgba(5,10,18,.72);
+    backdrop-filter:blur(10px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:3000;
+    padding:24px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .35s var(--ease);
+}
+#welcomeOverlay.open{
+    opacity:1;
+    pointer-events:auto;
+}
+
+.welcome-card{
+    position:relative;
+    width:100%;
+    max-width:460px;
+    background:linear-gradient(165deg, rgba(16,29,51,.98), rgba(8,15,27,.98));
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:var(--radius-lg);
+    padding:44px 38px 38px;
+    text-align:center;
+    box-shadow:0 30px 80px rgba(0,0,0,.5), 0 0 0 1px rgba(242,200,17,.08);
+    transform:scale(.85) translateY(24px);
+    opacity:0;
+    transition:transform .45s cubic-bezier(.34,1.56,.64,1), opacity .35s var(--ease);
+}
+#welcomeOverlay.open .welcome-card{
+    transform:scale(1) translateY(0);
+    opacity:1;
+}
+
+.welcome-close{
+    position:absolute;
+    top:16px;right:16px;
+    width:32px;height:32px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.1);
+    background:rgba(255,255,255,.04);
+    color:var(--gray-500);
+    cursor:pointer;
+    transition:color .2s, background .2s;
+}
+.welcome-close:hover{color:var(--white);background:rgba(255,255,255,.08);}
+
+.welcome-wave{
+    font-size:2.6rem;
+    display:inline-block;
+    animation:welcomeWave 1.8s ease-in-out infinite;
+    transform-origin:70% 70%;
+}
+@keyframes welcomeWave{
+    0%,100%{transform:rotate(0deg);}
+    10%{transform:rotate(16deg);}
+    20%{transform:rotate(-10deg);}
+    30%{transform:rotate(14deg);}
+    40%{transform:rotate(-4deg);}
+    50%{transform:rotate(0deg);}
+}
+
+.welcome-card h2{
+    font-size:1.6rem;
+    margin:18px 0 12px;
+}
+.welcome-card h2 span{color:var(--yellow);}
+
+.welcome-card p{
+    color:var(--gray-300);
+    font-size:.96rem;
+    max-width:360px;
+    margin:0 auto 28px;
+}
+
+.welcome-tags{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-bottom:28px;
+}
+.welcome-tags span{
+    font-family:var(--font-mono);
+    font-size:.7rem;
+    padding:6px 12px;
+    border-radius:50px;
+    background:rgba(242,200,17,.08);
+    border:1px solid rgba(242,200,17,.22);
+    color:var(--yellow);
+}
+
+.welcome-card .btn{width:100%;justify-content:center;}
+
+@media (max-width:480px){
+    .welcome-card{padding:36px 24px 30px;}
+}

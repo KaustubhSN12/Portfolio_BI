@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deloitte Manufacturing Analytics Dashboard | Kaustubh Narayankar</title>
+<meta name="description" content="Case study: Deloitte Data Analytics Job Simulation — a manufacturing downtime dashboard built in Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="project.css">
+<link rel="stylesheet" href="../chatbot.css">
+<link rel="stylesheet" href="../ds-redirect.css">
+<script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header id="site-header">
+  <a class="logo" href="../index.html#home">KN<span>.</span></a>
+  <nav id="site-nav">
+    <ul>
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#journey">Journey</a></li>
+      <li><a href="../index.html#skills">Skills</a></li>
+      <li><a href="../index.html#projects" class="active">Projects</a></li>
+      <li><a href="../index.html#certifications">Certifications</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-sm header-cta" href="mailto:k.narayankar3030@gmail.com">Hire Me</a>
+  <button id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<section class="case-hero">
+
+
+  <div class="project-header">
+  <a class="case-back" href="../index.html#projects">
+    <i class="fa-solid fa-arrow-left"></i> Back to Projects
+  </a>
+  <h1 class="project-title">DELOITTE · DATA ANALYTICS JOB SIMULATION</h1>
+</div>
+
+
+  <!-- <span class="case-eyebrow">Deloitte · Data Analytics Job Simulation</span>  -->
+   
+  <h1>Manufacturing Analytics Dashboard: Cutting Downtime Across Factories</h1>
+  <p class="case-summary">
+    A Power BI dashboard built to help plant managers see, at a glance, which factories and which
+    machines were driving the most production downtime — and where a preventive maintenance plan
+    would pay off first.
+  </p>
+
+  <div class="case-meta-row">
+    <span><i class="fa-solid fa-industry"></i> Manufacturing</span>
+    <span><i class="fa-solid fa-chart-column"></i> Power BI</span>
+    <span><i class="fa-solid fa-code"></i> DAX &amp; Power Query</span>
+  </div>
+</section>
+
+<div class="case-kpi-strip">
+  <div class="case-kpi"><span class="case-kpi-value">480</span><span class="case-kpi-label">Unhealthy Devices — Daikibo Seiko</span></div>
+  <div class="case-kpi"><span class="case-kpi-value">420</span><span class="case-kpi-label">Unhealthy Devices — Daikibo Shenzhen</span></div>
+  <div class="case-kpi"><span class="case-kpi-value">#1</span><span class="case-kpi-label">Failing Machine: Laser Welder</span></div>
+  <div class="case-kpi"><span class="case-kpi-value">#2</span><span class="case-kpi-label">Failing Machine: Laser Cutter</span></div>
+</div>
+
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-circle-info"></i> Overview</h2>
+  <p>
+    This project was completed as part of Deloitte's Data Analytics Job Simulation. The brief:
+    manufacturing leadership needed visibility into which factories and machines were causing the
+    most unplanned downtime, so maintenance budget could be targeted rather than spread evenly
+    across every site.
+  </p>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-triangle-exclamation"></i> Business Challenge</h2>
+  <p>
+    Identify production downtime across multiple factories, and turn device-health telemetry into a
+    prioritized, business-readable view that non-technical stakeholders could act on without needing
+    to query raw data themselves.
+  </p>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-database"></i> Dataset</h2>
+  <p>
+    Device-level health and failure logs across Daikibo Manufacturing's factory network, including
+    machine type, factory location, and unhealthy-device counts, modeled and shaped using Power Query
+    before being loaded into the Power BI data model.
+  </p>
+</div>
+
+<div class="case-gallery">
+  <h2><i class="fa-solid fa-images"></i> Dashboard Screenshots</h2>
+  <div class="gallery-grid">
+    <figure class="shot" data-placeholder="images/projects/deloitte/01.png">
+      <img src="../images/projects/deloitte/01.png" alt="Deloitte dashboard overview" loading="lazy" onerror="this.closest('.shot').classList.add('shot-missing')">
+      <figcaption>Executive overview</figcaption>
+    </figure>
+    <figure class="shot" data-placeholder="images/projects/deloitte/02.png">
+      <img src="../images/projects/deloitte/02.png" alt="Downtime by factory view" loading="lazy" onerror="this.closest('.shot').classList.add('shot-missing')">
+      <figcaption>Downtime by factory</figcaption>
+    </figure>
+    <figure class="shot" data-placeholder="images/projects/deloitte/03.png">
+      <img src="../images/projects/deloitte/03.png" alt="Machine failure breakdown" loading="lazy" onerror="this.closest('.shot').classList.add('shot-missing')">
+      <figcaption>Machine failure breakdown</figcaption>
+    </figure>
+  </div>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-circle-question"></i> Business Questions Answered</h2>
+  <ul class="case-list case-questions">
+    <li>Which factories have the highest concentration of unhealthy devices?</li>
+    <li>Which machine types fail most often, across the entire network?</li>
+    <li>Where should preventive maintenance budget be spent first?</li>
+  </ul>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-lightbulb"></i> Insights</h2>
+  <ul class="case-list">
+    <li>Daikibo Factory Seiko had the highest downtime, with 480 devices flagged unhealthy.</li>
+    <li>Daikibo Shenzhen followed closely, with 420 unhealthy devices — together the two sites accounted for the majority of network-wide downtime risk.</li>
+    <li>Laser Welders were the single most failure-prone machine type, with Laser Cutters close behind.</li>
+  </ul>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-square-check"></i> Recommendations</h2>
+  <ul class="case-list">
+    <li>Prioritize preventive maintenance schedules at Daikibo Seiko and Daikibo Shenzhen before other sites.</li>
+    <li>Fast-track inspection cycles for Laser Welders and Laser Cutters network-wide.</li>
+    <li>Roll the dashboard out to plant managers directly, so maintenance decisions don't wait on a monthly report.</li>
+  </ul>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-toolbox"></i> Technology Used</h2>
+  <div class="case-tools">
+    <span>Power BI</span><span>DAX</span><span>Power Query</span><span>Excel</span>
+  </div>
+</div>
+
+<div class="case-section">
+  <h2><i class="fa-solid fa-graduation-cap"></i> Lessons Learned</h2>
+  <p>
+    This was my first time modeling downtime data at a network-wide scale rather than a single site,
+    and it pushed me to think harder about aggregation level — a plant manager needs machine-level
+    detail, while an executive needs a single "where's the risk" number. Building both views off one
+    data model, using measures instead of duplicated tables, was the key DAX lesson from this simulation.
+  </p>
+</div>
+
+<nav class="case-nav">
+  <a href="hr-analytics.html" class="nav-prev"><span class="nav-label">← Previous</span>HR Analytics Dashboard</a>
+  <a href="pwc.html" class="nav-next"><span class="nav-label">Next →</span>PwC Switzerland Job Simulation</a>
+</nav>
+
+<footer>
+  <div class="footer-inner">
+    <a class="logo" href="../index.html#home">KN<span>.</span></a>
+    <ul class="footer-links">
+      <li><a href="../index.html#home">Home</a></li>
+      <li><a href="../index.html#about">About</a></li>
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+      <div class="footer-socials">
+  <!-- Icon 1 (GITHUB) -->
+  <a href="https://github.com/KaustubhSN12" target="_blank" rel="noopener" aria-label="GitHub" class="social-github">
+    <img src="C:\Users\KAUSTUBH\Documents\MIni Projects\BI_Portfolio\v4.1\images\github2.png" alt="GitHub Logo">
+  </a>
+
+  <!-- Icon 2 (LINKEDIN) -->
+  <a href="https://www.linkedin.com/in/kaustubh-narayankar-6651a9249/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-linkedin">
+    <img src="C:\Users\KAUSTUBH\Documents\MIni Projects\BI_Portfolio\v4.1\images\linkedin.png" alt="LinkedIn Logo">
+  </a>
+
+  <!-- Icon 3 (CUSTOM - e.g., LeetCode) -->
+  <a href="https://leetcode.com/k.narayankar3030/" target="_blank" rel="noopener" aria-label="LeetCode" class="social-leetcode">
+    <img src="C:\Users\KAUSTUBH\Documents\MIni Projects\BI_Portfolio\v4.1\images\email.png" alt="LeetCode Logo">
+  </a>
+</div>
+  </div>
+  <p class="footer-copy">© 2026 Kaustubh Narayankar. Built with HTML, CSS &amp; JavaScript.</p>
+</footer>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<button id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="../script.js"></script>
+<script src="../chatbot-data.js"></script>
+<script src="../chatbot.js"></script>
+<script src="../ds-redirect.js"></script>
+</body>
+</html>

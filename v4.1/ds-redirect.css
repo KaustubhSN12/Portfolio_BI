@@ -1,0 +1,107 @@
+/* ===========================================================
+   DATA SCIENTIST PORTFOLIO — REDIRECT EDGE TAB
+   Persistent on every page, right edge, vertically centered.
+   Label is always visible (not hidden until hover) so the
+   destination reads clearly at a glance; hover reveals a
+   secondary subtitle line and expands slightly further.
+   Relies on CSS variables from style.css (loaded first).
+=========================================================== */
+
+#dsRedirectTab{
+    position:fixed;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1400;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 20px 14px 16px;
+    border-radius:16px 0 0 16px;
+    background:linear-gradient(135deg, var(--teal), #1fa895 60%, var(--teal));
+    background-size:220% 220%;
+    color:var(--navy-950);
+    text-decoration:none;
+    box-shadow:-8px 12px 34px rgba(46,230,200,.32);
+    animation:dsShimmer 5s ease-in-out infinite, dsWiggle 6s ease-in-out infinite, dsGlowPulse 2.6s ease-in-out infinite;
+    transition:padding .35s var(--ease), transform .35s var(--ease), box-shadow .35s var(--ease);
+    max-width:210px;
+    cursor:pointer;
+}
+
+#dsRedirectTab:hover{
+    max-width:340px;
+    padding:18px 24px;
+    transform:translateY(-50%) translateX(-4px);
+    box-shadow:-10px 16px 44px rgba(46,230,200,.55);
+    animation:dsShimmer 5s ease-in-out infinite;
+}
+
+@keyframes dsShimmer{
+    0%,100%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+}
+
+@keyframes dsWiggle{
+    0%,88%,100%{transform:translateY(-50%) rotate(0deg);}
+    90%{transform:translateY(-50%) rotate(-3deg);}
+    92%{transform:translateY(-50%) rotate(3deg);}
+    94%{transform:translateY(-50%) rotate(-2deg);}
+    96%{transform:translateY(-50%) rotate(0deg);}
+}
+
+/* the "blink/glow" attention cue — a breathing halo, not a harsh flash */
+@keyframes dsGlowPulse{
+    0%,100%{box-shadow:-8px 12px 34px rgba(46,230,200,.28);}
+    50%{box-shadow:-8px 12px 50px rgba(46,230,200,.72), 0 0 24px rgba(46,230,200,.35);}
+}
+
+.ds-tab-icon{
+    width:26px;height:26px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.05rem;
+}
+
+.ds-tab-text{
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.ds-tab-text strong{
+    display:block;
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:.88rem;
+    line-height:1.2;
+}
+
+/* subtitle line — compact by default, expands in on hover */
+.ds-tab-text span{
+    display:block;
+    font-family:var(--font-mono);
+    font-size:.66rem;
+    margin-top:0;
+    max-height:0;
+    opacity:0;
+    transition:max-height .3s var(--ease), opacity .25s var(--ease) .05s, margin-top .3s var(--ease);
+}
+#dsRedirectTab:hover .ds-tab-text span{
+    max-height:20px;
+    opacity:.85;
+    margin-top:2px;
+}
+
+@media (max-width:700px){
+    #dsRedirectTab{
+        top:auto;
+        bottom:96px;
+        right:0;
+        transform:none;
+        max-width:190px;
+        animation:dsShimmer 5s ease-in-out infinite, dsGlowPulse 2.6s ease-in-out infinite;
+    }
+    #dsRedirectTab:hover{transform:translateX(-4px);}
+}
